@@ -1,3 +1,4 @@
+
 @import url('https://fonts.cdnfonts.com/css/astera');
 
 @import url('https://fonts.cdnfonts.com/css/circe');
@@ -42,7 +43,7 @@ ul{
 	font-family: 'Berlin Sans FB Demi',sans-serif;
 	font-size: 72px;
 	line-height: 69.26px;
-	font-weight: 700px;
+	font-weight: 700;
 }
 .conteiner{
 	max-width:1220px;
@@ -160,7 +161,7 @@ ul{
 	z-index: 1;
 	display: flex;
 	justify-content: center;
-	height: 100vh;
+	height: 100%;
 }
 
 
@@ -179,7 +180,7 @@ ul{
 	flex-direction: column;
 	border-left: 1px solid rgba(134, 134, 134, 0.9);
 	position: relative;
-	height: 100%;
+
 	
 }
 .nav{
@@ -187,12 +188,12 @@ ul{
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	padding: 5px 0;
+	padding: 25px 5px 48px 57px;
 	border-bottom: 1px solid rgba(134, 134, 134, 0.9);
+
 }
 
 .logo {
-	margin-left: 57px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -244,36 +245,47 @@ ul{
 	font-size: 28px;
 }
 .header__slider-wrap{
-	height: calc(100vh - 243px);
+	padding: 102px 0px 55px;
 	width: 100%;
 	position: relative;
+}
+.header__slider-wrap:before{
+	content:'';
+	position: absolute;
+	z-index: 2;
+	bottom:65px;
+	left:49.5%;
+	width: 69px;
+	height: 1px;
+	background-color: #fff;
+	transform: rotate(90deg);
+	
 }
 .dots-img{
 	position: absolute;
 	height: auto;
 }
 .dots-horisont{
-	top:0;
+	top:73px;
 	left: -235px;
 	z-index: -1;
 }
 .dots-vertical{
 	max-width:202px; 
 	height: auto;
-	bottom: 3px;
-    right:-60px;
+	bottom: 135px;
+    right:-50px;
 	z-index: -1;
 }
 
 .header__slider {
-	height: 100%;
 	width: 100%;
 	position: relative;
 	padding-top: 127px;
 }
 .header__slider .slick-arrow{
 	position: absolute;
-	bottom: -3%;
+	bottom: 0;
 	z-index: 2;
 	font-size: 0;
 	background: none;
@@ -283,6 +295,7 @@ ul{
 }
 .header__slider .slick-arrow:after{
 	position: absolute;
+	bottom: 0;
 	width: 64px;
 	height: 44px;
 	z-index: 2;
@@ -302,18 +315,7 @@ ul{
 .header__slider .slick-prev{
 	left: 45%
 }
-.header__slider .slick-prev:before{
-	content:'';
-	position: absolute;
-	z-index: 2;
-	left: 57px;
-    top: 22px;
-	width: 69px;
-	height: 1px;
-	background-color: #fff;
-	transform: rotate(90deg);
-	
-}
+
 .header__slider .slick-prev:after{
 	content: 'Назад';
 	background-image: url(../images/hed-prev.png);
@@ -323,7 +325,7 @@ ul{
 	background-image: url(../images/hed-prev-active.png);
 }
 .header__slider .slick-next{
-	left: 55%;
+	left: 54.5%;
 }
 .header__slider .slick-next:after{
 	content: 'Вперед';
@@ -376,7 +378,7 @@ ul{
 	justify-content: space-between;
 	position: absolute;
 	right: -215px;
-	top: 55%;
+	top: 44%;
 	grid-gap: 216px;
 	transform: rotate(90deg);
 }
@@ -459,7 +461,7 @@ ul{
 	outline: none;
 	padding: 13px 50px;
 	font-weight: 700;
-	letter-spacing: 7%;
+	letter-spacing: 4px;
 	line-height: 21.94px;
 	border-radius: 50px;
 	font-size: 17px;
@@ -468,8 +470,8 @@ ul{
 .form__num::placeholder {
 	color: rgba(111, 119, 132, 1);
 	font-weight:700;
-	font-size: 18px;
-	letter-spacing: 7%;
+	font-size: 17px;
+	letter-spacing: 1px;
 	line-height: 21.94px;
 }
 
@@ -494,84 +496,76 @@ ul{
 
 }
 .header__box{
-	max-width: 50%;
-	background:url(../images/blur.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 50%;
+	max-width: 70%;
+	margin-left: auto;
+	margin-top: 67px;
+    margin-bottom: 55px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: auto;
-	margin-right:129px; 
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	
 }
+.header__box-blur{
+	background:radial-gradient(#F2994A,transparent);
+	filter: blur(30px);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 100%;
+	bottom: 0;
+	z-index: 1;
+}
 .header__box-img{
-	margin-right: 79px;
-	margin-top: 50px;
-	display: block;
+	position: relative;
+	z-index: 2;
+	width: 100%;
 	
 }
 .header__circle{
-	height: 48px;
-	width: 48px;
+	height: 36px;
+	width: 36px;
 	border-radius: 50%;
 	border:2px solid #F9EEDC;
 	position: absolute;
 	background-color: #F79E1B;
 	cursor: pointer;
-	z-index: 5;
+	z-index: 3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-.header__circle::after{
-	content: "";
+.circle__cross{
+	width: 18px;
+	height: 18px;
 	display: block;
-	width:18px;
-	height: 2px;
-	background-color: #313741;
-	position: absolute;
-	bottom: 50%;
-	transform: translateY(50%);
-	right: 50%;
-	transform: translateX(50%);
-	border-radius: 2px;
-}
-.header__circle::before{
-	content: "";
-	display: block;
-	width:18px;
-	height: 2px;
-	background-color: #313741;
-	position: absolute;
-	left: 31%;
-	top: 45%;
-	transform: rotate(90deg);
-	border-radius: 2px;
-	
-
+	margin:0 auto;
 }
 
-.header__circle:nth-child(2) {
-	bottom: 71px;
-    right: 151px;
-}
+
 .header__circle:nth-child(3) {
-	bottom: 164px;
-    right: 341px;
+	bottom: 13%;
+    right: 28%;
 }
 .header__circle:nth-child(4) {
-	bottom: 273px;
-    right: 474px;
+	bottom: 33%;
+    right: 51%;
 }
 .header__circle:nth-child(5) {
-	bottom: 334px;
-    right: 283px;
+	bottom: 54%;
+    right: 66%;
 }
 .header__circle:nth-child(6) {
-	right: 79px;
-    bottom: 311px;
+	bottom: 69%;
+    right: 44%;
+}
+.header__circle:nth-child(7) {
+	right: 21%;
+    bottom: 63%;
 }
 .header__circle-text{
 	display: none;
@@ -1355,47 +1349,40 @@ ul{
 .dron {
 	background-color: #ccc;
 	display: flex;
-	align-items: flex-end;
 	justify-content: right;
-
+	align-items: flex-end;
 	position: relative;
+	
 	
 }
 .dron__img{
-	position: relative;
 	z-index: 2;
 	width: 80%;
 	height: auto;
-	margin-left: auto;
-	margin-right: 286px;
-
+	margin-right: 15%;
 
 }
 
 .dron__element-wrap{
+	width: 62%;
+	position: absolute;
 	display: flex;
 	align-items: flex-end;
-	justify-content: space-between;
-	margin-right: 117px;
-	position: absolute;
-	width: 30%;
-	height: 68%;
+	justify-content: right;
+
+	
 }
 
 .dron__element{
-	background-color: rgba(242, 153, 74, 1);
-	height: 100%;
-	width: 60%;
-	transform: skewX(-32deg);
+	width: 66%;
+	position: absolute;
+	right: 11%;
 	
 }
 .dron__element-small{
-	background-color: rgba(242, 153, 74, 1);
-	height: 60%;
-	width: 35%;
-	transform: skewX(-32deg);
-
-
+	position: absolute;
+	width:36%;
+	right:0;
 	
 }
 /*------------------- contacts ---------------------*/
