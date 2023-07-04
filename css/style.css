@@ -1429,10 +1429,11 @@ ul{
 	margin-bottom: 13px;
 
 }
-.contacts__btn{
-	max-width:315px !important;
-	margin:0 !important;
+.contacts__btn {
+    max-width: 315px !important;
+    margin: 0 !important;
 }
+
 
 
 /*--------------------- footer ------------------------*/
