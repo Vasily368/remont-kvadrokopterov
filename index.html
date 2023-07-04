@@ -30,7 +30,7 @@
 						</div>
 						<div class="input__popup-wrap">
 							<p class="input__name">Номер</p>
-							<input class="form__num forma__popup-num" type="text" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
+							<input class="form__num forma__popup-num tel" type="tel" value="" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
 						</div>
 					</div>
 				
@@ -68,7 +68,7 @@
 								<a class="social__icon" href="#" ><img class="social__img" src="images/wapp.svg" ></a>
 								<a class="social__icon" href="#" ><img class="social__img" src="images/tg.svg" ></a>
 								</div>
-								<a  class="header__number" href="tel:+74950233012">+7 (495) 023-30-12</a>
+								<a  class="header__number "  href="tel:+74950233012">+7 (495) 023-30-12</a>
 							</div>
 							
 						</nav>
@@ -83,7 +83,7 @@
 								</p>
 								<form class="slider__form">
 									<div class="form__num-wrap">
-										<input class="form__num slider__num" type="text" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
+										<input class="form__num slider__num tel" type="tel" value="" type="tel" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
 									</div>
 									
 									<a class="form__btn slider__btn authorization" href="#authorization">Оставить заявку<img class="form__arrow" src="images/btn-arrow.svg" ></a>
@@ -92,28 +92,34 @@
 							
 
 							<div class="header__box">
+								<div class="header__box-blur"></div>
 								<img class="header__box-img" src="images/dronHeader.png" >
-								<div class="header__circle" value="2">
+								<div class="header__circle" >
+									<img class="circle__cross" src="images/circle-cross.svg" >
 									<div class="header__circle-text" >
 										Ремонт или замена лопастей
 									</div>
 								</div>
-								<div class="header__circle" value="3">
+								<div class="header__circle" >
+									<img class="circle__cross" src="images/circle-cross.svg" >
 									<div class="header__circle-text">
 										Ремонт или замена лопастей
 									</div>
 								</div>
-								<div class="header__circle" value="4">
+								<div class="header__circle" >
+									<img class="circle__cross" src="images/circle-cross.svg" >
 									<div class="header__circle-text">
 										Ремонт или замена лопастей
 									</div>
 								</div>
-								<div class="header__circle" value="5">
+								<div class="header__circle" >
+									<img class="circle__cross" src="images/circle-cross.svg" >
 									<div class="header__circle-text">
 										Ремонт или замена лопастей
 									</div>
 								</div>
-								<div class="header__circle" value="6">
+								<div class="header__circle" >
+									<img class="circle__cross" src="images/circle-cross.svg" >
 									<div class="header__circle-text">
 										Ремонт или замена лопастей
 									</div>
@@ -140,32 +146,8 @@
 							
 
 							<div class="header__box">
+								<div class="header__box-blur"></div>
 								<img class="header__box-img" src="images/dronHeader.png" >
-								<div class="header__circle" value="2">
-									<div class="header__circle-text" >
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="3">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="4">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="5">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="6">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
 								
 							</div>
 						
@@ -188,32 +170,8 @@
 							
 
 							<div class="header__box">
+								<div class="header__box-blur"></div>
 								<img class="header__box-img" src="images/dronHeader.png" >
-								<div class="header__circle" value="2">
-									<div class="header__circle-text" >
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="3">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="4">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="5">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
-								<div class="header__circle" value="6">
-									<div class="header__circle-text">
-										Ремонт или замена лопастей
-									</div>
-								</div>
 								
 							</div>
 						
@@ -226,8 +184,6 @@
 					
 					</div>
 				</div>
-				
-			</div>
 		
 		</header>
 
@@ -496,7 +452,7 @@
 								<div class="price__box call__box">
 									<h3 class="price__box-title">Позвоните сейчас</h3>
 									<p class="price__box-text">и мастер прибудет к вам в течении 30 минут</p>
-									<button class="price__box-btn">Позвонить</button>
+									<a class="price__box-btn" href="tel:+74950233012">Позвонить</a>
 								</div>
 							</div>
 
@@ -523,7 +479,7 @@
 									<img class="price__box-img" src="images/free-master.svg" >
 									<div class="price__box-content">
 										<h3 class="price__box-title free__box-title">Свободных мастеров</h3>
-										<span class="free__box-text">3 человека</span>
+										<span class="free__box-text"><span class="out-num" id="out">3</span> человека</span>
 									</div>
 									
 								</div>
@@ -611,7 +567,7 @@
 													<p class="reviews__master-name">Андрей</p>
 													<p class="reviews__master-text">Выездной мастер</p>
 													<p class="reviews__master-descr">5 лет в сервисе</p>
-													<button class="reviews__master-btn">Вызвать</button>
+													<a class="reviews__master-btn authorization" href="#authorization">Вызвать</a>
 												</div>
 											</div>
 										</div>
@@ -662,7 +618,7 @@
 													<p class="reviews__master-name">Андрей</p>
 													<p class="reviews__master-text">Выездной мастер</p>
 													<p class="reviews__master-descr">5 лет в сервисе</p>
-													<button class="reviews__master-btn">Вызвать</button>
+													<a class="reviews__master-btn authorization" href="#authorization">Вызвать</a>
 												</div>
 											</div>
 										</div>
@@ -788,8 +744,8 @@
 			<section class="dron">
 				<img class="dron__img" src="images/dron1.png">
 				<div class="dron__element-wrap">
-					<div class="dron__element"></div>
-					<div class="dron__element-small"></div>
+					<img class="dron__element" src="images/dron-element.svg">
+					<img class="dron__element-small" src="images/dron-element-small.svg">
 				</div>
 					
 			</section>
@@ -806,7 +762,7 @@
 						<p class="contacts__forma-text">Телефон: +7 (495) 023-30-12</p>
 						<p class="contacts__forma-text">Email: info@kreslaremont.ru</p>
 						<div class="contacts__num-wrap">
-							<input class="form__num contacts__num" type="text" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
+							<input class="form__num contacts__num tel" type="tel" value="" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
 						</div>
 							
 						<a class="form__btn slider__btn authorization" href="#authorization">Оставить заявку<img class="form__arrow" src="images/btn-arrow.svg" ></a>
