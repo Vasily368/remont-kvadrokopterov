@@ -596,6 +596,9 @@
     	line-height: 19.94px;
     	margin-bottom: 18px;
 	}
+	.form__num{
+	padding: 13px 16px;
+	}
 	/*footer*/
 	.footer{
 		padding: 55px 20px 55px;
